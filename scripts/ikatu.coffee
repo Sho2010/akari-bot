@@ -8,3 +8,7 @@ module.exports = (robot) ->
     "https://files.slack.com/files-pri/T04L97CNM-F04LSPXS0/33-11.jpg",
     "https://files.slack.com/files-pri/T04L97CNM-F04LSPYN0/49-1.jpg",
     "https://files.slack.com/files-pri/T04L97CNM-F04LSQA9S/f509fd0e.jpg"]
+
+  robot.hear /.*/i, (msg) ->
+    msg.send "https://www.dropbox.com/s/t8s03xh5e1nhpea/ikatu.jpg" if Math.floor(Math.random() * 200) == 0
+
