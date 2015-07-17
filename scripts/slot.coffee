@@ -1,6 +1,7 @@
 students = [":ayano:", ":chitose:", ":himawari:", ":rise:", ":sakurako:"] 
 goraku = [":akari:", ":chi-nya:", ":kyoko:", ":yui:"]
-slot_src = [students, goraku]
+all = students.concat(goraku)
+slot_src = [students, goraku, all]
 
 module.exports = (robot) ->
   robot.hear /slot|スロット$/i, (msg) ->
